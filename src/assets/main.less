@@ -1,0 +1,212 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.4rem;
+    overflow: hidden;
+    position: relative;
+}
+html,body{
+    font-family: 'Micrsorft YaHei';
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.pages{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 45px;
+    background: #f5f5f5;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+input,textarea{
+    font-family: '微软雅黑' !important;
+}
+
+
+//组件样式修改
+
+.head-nav{
+    // height: 65px !important;
+    height: 45px !important;
+    font-size: 1.4rem !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // padding-top: 20px;
+    background: #ff3131 !important;
+    // background: #ff6011 !important;
+    // background: -webkit-linear-gradient(to right, #ff6011 , #ffa026) !important;
+    // background: -moz-linear-gradient(to right, #ff6011 , #ffa026) !important;
+    // background: -o-linear-gradient(to right, #ff6011 , #ffa026) !important;
+    // background: linear-gradient(to right, #ff6011 , #ffa026) !important;
+    color: #fff !important;
+    .yd-navbar-center-box{
+        height: 45px !important;
+        color: #fff !important;
+        span{
+            font-size: 1.6rem !important;
+            color: #fff !important;
+        }
+    }
+    .yd-navbar-item{
+        color: #fff !important;
+        *{
+            color: #fff !important;
+        }
+    }
+}
+.yd-navbar:after{
+    border: none;
+}
+.foot-tabbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    i{
+        font-size: 2rem !important;
+    }
+    font-size: 1.4rem !important;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+.loading {
+    font-size: 16px;
+    i {
+        display: inline-block;
+        font-size: 1.8rem;
+        vertical-align: middle;
+        margin-right: 10px;
+        animation: rotate 1s linear infinite;
+    }
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    position: relative;
+}
+.yd-cell{
+    z-index: 0 !important;
+}
+
+.yd-slider-wrapper{
+    z-index: 0 !important;
+}
+.yd-slider-pagination{
+    z-index: 0 !important;
+}
+//复用列表样式
+.list-item {
+    padding: 10px;
+    position: relative;
+    .left{
+        float: left;
+        margin-right: 8px;
+        .icon {
+        margin-top: 3px;
+        width: 40px;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+    }
+    }
+    .name {
+        .title {
+            font-size: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .smallTitle{
+            margin: 10px 0;
+            color: #666;
+            span{
+                margin-right: 10px;
+            }
+        }
+        .small {
+            margin: 5px 0;
+            color: #aaa;
+            font-size: 12px;
+            .statusBtn {
+                font-size: 12px;
+                float: right;
+                color: #1bbde4;
+            }
+            .right {
+                float: right;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background: #ddd;
+            bottom: 0;
+            right: 0;
+            transform: scaleY(.4);
+        }
+    }
+     &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+}
+//无数据显示图片
+.nullData{
+    display: block;
+    width: 70%;
+    min-height: 100%;
+    background: url(img/nullData.png) no-repeat;
+    background-size: 122%;
+    background-position-y: 20%;
+    margin: 0 auto;
+    transition: .3s;
+    &:active{
+        // transform: scale(1.2);
+    }
+}
+
+
+.yd-lightbox-loading {
+    display: none;
+}
+.yd-lightbox-head{
+    top: 15px;
+}
+
+
+.picker-slot{
+    width: 100%;
+    >.picker-slot-wrapper{
+        width: 100%;
+    }
+}
